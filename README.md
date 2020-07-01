@@ -1,20 +1,17 @@
-UniRide - Carpool and Parking System README
+DynamicCarpool - Carpool and Parking System README
 =============================
 
 Project GitHub Link:
-https://github.com/195-uniride/UniRideAndroid
+https://github.com/iamishan9/DynamicCarpool
 
-Project Report:
-https://drive.google.com/open?id=11OCSYPyF5YM3E-ee-xoqXjSHFxVUQn0e
 
-UniRide - Carpool and Parking System
+DynamicCarpool - Carpool and Parking System
 ---------------
 
-UniRide consists of an Android mobile application and a parking system that utilizes IoT technology. The Android application allows users to carpool together based on their scheduled trips, organization, source location and destination. UniRide uses a matchmaking algorithm that filters the posts seen by the current user. Users are able to choose and join a carpool that best suits their liking. When a user joins a carpool, members of the existing carpool will be notified with a notification sent to their phone. During the day of the scheduled carpool, each member of the carpool will again be notified to remind users of the carpool that will take place that day. UniRide uses Google Maps to navigate drivers to their destinations. When they arrive at their destination, UniRide’s parking system will assist the carpoolers to a designated parking space within the parking lot. The parking system utilizes ultrasonic sensors to monitor the status of a parking space. Ultrasonic sensors can identify if a parking space is available or occupied, and this data will be visible through the UniRide Android mobile application. The captured data from the sensors are sent to the mobile application through programs written within the Raspberry Pi and Arduino. 
+DynamicCarpool consists of an Android mobile application and a parking system that utilizes IoT technology. The Android application allows users to carpool together based on their scheduled trips, organization, source location and destination. DynamicCarpool uses a matchmaking algorithm that filters the posts seen by the current user. Users are able to choose and join a carpool that best suits their liking. When a user joins a carpool, members of the existing carpool will be notified with a notification sent to their phone. During the day of the scheduled carpool, each member of the carpool will again be notified to remind users of the carpool that will take place that day. DynamicCarpool uses Google Maps to navigate drivers to their destinations. When they arrive at their destination, DynamicCarpool's parking system will assist the carpoolers to a designated parking space within the parking lot. The parking system utilizes ultrasonic sensors to monitor the status of a parking space. Ultrasonic sensors can identify if a parking space is available or occupied, and this data will be visible through the DynamicCarpool Android mobile application. The captured data from the sensors are sent to the mobile application through programs written within the Raspberry Pi and Arduino. 
 
 This document only has details to install and deploy the Android mobile application and does not specify how to setup the parking sensor system. 
 
-<img src="screenshots/current_app_screenshot.png"/>
 Current Application Screenshots
 
 Getting Started
@@ -30,11 +27,11 @@ https://developer.android.com/studio/run/emulator
 
 - Clone or download the project from the GitHub repository.
 
-https://github.com/195-uniride/UniRideAndroid
+https://github.com/iamishan9/DynamicCarpool
 
 - Use Android Studio to open the project.
 
-Navigate to the app folder in the root of the UniRide project folder.
+Navigate to the app folder in the root of the DynamicCarpool project folder.
 Choose app folder to open project in Android Studio
 
 Result
@@ -72,7 +69,7 @@ Data Model
 ---------------
 
 Firebase Dashboard:
-https://console.firebase.google.com/u/0/project/uniride-c45e0/overview
+https://console.firebase.google.com/u/0/project/DynamicCarpool-c45e0/overview
 
 Firebase database has eight nodes:
 
@@ -99,7 +96,7 @@ Structure: /[organizationID] /[postType] /[postID] /[postInfo]
 
 Application Structure
 ---------------
-The code classes are located in the *app/java/com.sjsu.se195.uniride* folder.
+The code classes are located in the *app/java/com.sjsu.se195.DynamicCarpool* folder.
 
 
 There are a number of classes used. Every class belongs to one of the following categories:
