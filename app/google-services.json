@@ -1,0 +1,44 @@
+{
+  "project_info": {
+    "project_number": "810137499040",
+    "firebase_url": "https://carpool-905b5.firebaseio.com",
+    "project_id": "carpool-905b5",
+    "storage_bucket": "carpool-905b5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:810137499040:android:fa396e54c871320b7b60c5",
+        "android_client_info": {
+          "package_name": "com.m1.iot.carpool"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "810137499040-55nmugmgs8i79d5l1gcoiv50vkll0cd0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB40KiG-V_XnAivZHiEXK88PT3wB3TJTeE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "810137499040-55nmugmgs8i79d5l1gcoiv50vkll0cd0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

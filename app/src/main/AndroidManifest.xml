@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.m1.iot.carpool">
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.m1.iot.carpool.CustomApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAmNVox81iAKbWOCEvTBrZ_oezJj8juL-A" />
+
+        <activity android:name="com.m1.iot.carpool.BaseActivity" />
+        <activity
+            android:name="com.m1.iot.carpool.MainActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.m1.iot.carpool.NewPostActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.m1.iot.carpool.MainSubcategoryActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- <activity android:name=".NewCarpoolActivity" /> removing this one -->
+
+        <activity android:name="com.m1.iot.carpool.SearchResultsActivity" />
+        <activity android:name="com.m1.iot.carpool.NewOrganizationActivity" />
+        <activity
+            android:name="com.m1.iot.carpool.PostDetailActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.m1.iot.carpool.OrganizationDetailActivity" />
+        <activity android:name="com.m1.iot.carpool.ShowOrganizationsActivity" />
+        <activity
+            android:name="com.m1.iot.carpool.SignUpActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.m1.iot.carpool.AddUserInformation" />
+        <activity
+            android:name="com.m1.iot.carpool.SignInActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.m1.iot.carpool.PreviewCarpoolDetailActivity"
+            android:label="@string/title_activity_carpool_detail" />
+        <activity
+            android:name="com.m1.iot.carpool.NewCarpoolActivity"
+            android:label="@string/title_activity_new_carpool" />
+        <activity android:name="com.m1.iot.carpool.CarpoolActivity" />
+        <activity
+            android:name="com.m1.iot.carpool.ProfilePageActivity"
+            android:label="@string/title_activity_profile_page"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <receiver android:name="com.m1.iot.carpool.AlarmListener" />
+
+        <activity android:name="com.m1.iot.carpool.OrganizationParkingActivity" />
+        <activity android:name="com.m1.iot.carpool.GarageListActivity"></activity>
+    </application>
+
+</manifest>
