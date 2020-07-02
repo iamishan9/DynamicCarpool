@@ -120,6 +120,7 @@ public class MainSubcategoryActivity extends MainActivity implements AdapterView
         bundle.putString(PostListFragment.EXTRA_ORGANIZATION_ID, getSelectedOrganizationId());
 
         Fragment posts = new RecentPostsFragment();
+
         posts.setArguments(bundle);
         getSupportFragmentManager().beginTransaction().add(R.id.post_fragment_placeholder, posts, "PostsList").commit();
     }
